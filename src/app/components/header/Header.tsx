@@ -1,5 +1,6 @@
 "use client";
 import { SquareMenu } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 // import { Link, animateScroll as scroll } from "react-scroll";
@@ -23,7 +24,8 @@ export default function Header() {
     <header className="flex py-5 px-11">
       <nav className="flex justify-between items-center w-full h-10">
         <div className="logo cursor-pointer">
-          <img src="/Logo.png" alt="" />
+          {/* <img src="/Logo.png" alt="" /> */}
+          <Image width={129} height={40} src="/Logo.png" alt="Image logo" />
         </div>
         <div className="hidden sm:block">
           <ul className="flex gap-8">
@@ -41,6 +43,7 @@ export default function Header() {
           </ul>
         </div>
         <div className="toggle-btn block sm:hidden cursor-pointer">
+          <SquareMenu />
           {/* <VaulDrawer /> */}
         </div>
       </nav>

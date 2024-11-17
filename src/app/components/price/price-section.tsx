@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function PriceSection() {
   return (
     <section
@@ -14,7 +16,7 @@ export function PriceSection() {
           mensalmente um ebook novo de programação. E por menos de um café por
           dia.
         </p>
-        <img src="/Plan Card.png" alt="" className="pb-16" />
+        <Image src="/Plan Card.png" width={418} height={490} alt="Plan card" />
       </div>
     </section>
   );
