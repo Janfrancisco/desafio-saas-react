@@ -7,7 +7,7 @@ import { useState } from "react";
 // import { login} from './hooks/useLogin'
 
 export default function Header() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
   /* async function increment(){
     setCount(a => a +1);
     console.log('fbsrjs');

@@ -1,4 +1,3 @@
-import { Check } from "lucide-react";
 import Item from "./items";
 import Image from "next/image";
 

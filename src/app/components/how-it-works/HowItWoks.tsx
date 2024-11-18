@@ -1,4 +1,4 @@
-import { forwardRef } from "react";
+// import { forwardRef } from "react";
 import Explains from "./explains";
 
 export default function HowItWorks() {
