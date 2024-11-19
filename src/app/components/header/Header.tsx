@@ -2,6 +2,7 @@
 import { SquareMenu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import VaulDrawer from "../ui/drawer";
 // import { Link, animateScroll as scroll } from "react-scroll";
 // import { login} from './hooks/useLogin'
 
@@ -12,7 +13,6 @@ export default function Header() {
     console.log('fbsrjs');
     const t = await login();
     console.log(t.data);
-      
     login().then((data)=>{
       console.log('data ' +data);
       
@@ -42,6 +42,7 @@ export default function Header() {
           </ul>
         </div>
         <div className="toggle-btn block sm:hidden cursor-pointer">
+          <VaulDrawer links={["Funcionamento", "Preço", "Login"]} />
           <SquareMenu />
           {/* <VaulDrawer /> */}
         </div>
