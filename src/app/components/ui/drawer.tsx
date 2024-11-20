@@ -1,7 +1,6 @@
 /*  */
 "use client";
 
-import { SquareMenu } from "lucide-react";
 import { Drawer } from "vaul";
 
 interface DrawerProps {
