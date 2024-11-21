@@ -78,6 +78,7 @@ export default function Header() {
                 <div className="flex flex-col h-full items-center justify-center">
                   <li className="flex justify-center items-center pb-3">
                     <Link
+                      onClick={toggleMobileMenu}
                       className="text-2xl text-zinc-400"
                       href={"#howItsWorks"}
                     >
@@ -85,7 +86,11 @@ export default function Header() {
                     </Link>
                   </li>
                   <li className="flex justify-center items-center pb-3">
-                    <Link className="text-2xl text-zinc-400" href={"#price"}>
+                    <Link
+                      onClick={toggleMobileMenu}
+                      className="text-2xl text-zinc-400"
+                      href={"#price"}
+                    >
                       Preço
                     </Link>
                   </li>

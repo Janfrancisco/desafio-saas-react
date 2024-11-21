@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function PriceSection() {
+export const Price = () => {
   return (
     <section
       id="price"
@@ -20,4 +20,4 @@ export function PriceSection() {
       </div>
     </section>
   );
-}
+};
