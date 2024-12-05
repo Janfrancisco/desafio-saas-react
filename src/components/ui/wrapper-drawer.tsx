@@ -15,7 +15,12 @@ interface WrapperDrawerProps {
 }
 export default function WrapperDrawer({ ...props }: WrapperDrawerProps) {
   return (
-    <Drawer open={props.isMobileMenuOpened} direction="left">
+    <Drawer
+      open={props.isMobileMenuOpened}
+      direction="left"
+      disablePreventScroll={true}
+      noBodyStyles={true}
+    >
       <DrawerTrigger onClick={props.toggleMobileMenu}>
         <Menu />
       </DrawerTrigger>
