@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { Menu, X } from "lucide-react";
 
 export default function Header() {
-  const dropDownRef = useRef(null);
+  const dropDownRef = useRef<HTMLElement>(null);
 
   function toggleMobileMenu() {
     dropDownRef.current?.classList?.toggle("open");
