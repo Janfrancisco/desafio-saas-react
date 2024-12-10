@@ -6,9 +6,9 @@ import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const dropDownRef = useRef<HTMLDivElement>(null);
-  const dropDownNode = dropDownRef.current;
 
   function toggleMobileMenu() {
+    const dropDownNode = dropDownRef?.current;
     dropDownNode !== null && dropDownNode.classList?.toggle("open");
     document.body.classList?.toggle("overflow-hidden");
   }
