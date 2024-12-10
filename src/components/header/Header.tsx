@@ -5,26 +5,11 @@ import { useState, useRef } from "react";
 import { Menu, X } from "lucide-react";
 
 export default function Header() {
-  const [isMobileMenuOpened, setIsMobileOpened] = useState(false);
-  const [isAnimationEnded, setisAnimationEnded] = useState(false);
   const dropDownRef = useRef(null);
 
   function toggleMobileMenu() {
     dropDownRef.current?.classList?.toggle("open");
     document.body.classList?.toggle("overflow-hidden");
-
-    setIsMobileOpened((state) => !state);
-  }
-  function clicked(status: boolean) {
-    console.log("status");
-    setisAnimationEnded(status);
-
-    /* if (status) {
-      console.log("Clicked! " + status);
-    } else {
-      console.log("qqqq");
-      // window.scrollTo(0, 500);
-    } */
   }
 
   return (
