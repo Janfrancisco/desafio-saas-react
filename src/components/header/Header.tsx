@@ -8,7 +8,10 @@ export default function Header() {
   const dropDownRef = useRef<HTMLElement>(null);
 
   function toggleMobileMenu() {
-    dropDownRef.current?.classList?.toggle("open");
+    const dropDownNode = dropDownRef.current;
+    console.log("dfdnn");
+
+    dropDownNode !== null && dropDownNode.classList?.toggle("open");
     document.body.classList?.toggle("overflow-hidden");
   }
 
