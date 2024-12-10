@@ -2,16 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useRef } from "react";
-import dynamic from "next/dynamic";
-import {
-  Drawer,
-  DrawerContent,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "../ui/drawer";
-import { Component, Menu, X } from "lucide-react";
-import WrapperDrawer from "../ui/wrapper-drawer";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
   const [isMobileMenuOpened, setIsMobileOpened] = useState(false);
