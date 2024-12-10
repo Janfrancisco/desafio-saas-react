@@ -9,7 +9,12 @@ export default function Header() {
 
   function toggleMobileMenu() {
     const dropDownNode = dropDownRef?.current;
-    dropDownNode !== null && dropDownNode.classList?.toggle("open");
+    // dropDownNode !== null && dropDownNode.classList?.toggle("open");
+    if (dropDownNode == null) {
+      console.log("dssb");
+    } else {
+      dropDownNode.classList?.toggle("open");
+    }
     document.body.classList?.toggle("overflow-hidden");
   }
 
