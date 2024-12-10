@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import { Menu, X } from "lucide-react";
 
 export default function Header() {
